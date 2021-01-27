@@ -106,7 +106,7 @@ function Airplane(name) {
    this.favoriteToy = favoriteToy;
    }
    Baby.prototype = Object.create(Person.prototype);
-   
+
    Baby.prototype.play = function (){
      return `Playing with ${this.favoriteToy}`;
    }
@@ -115,10 +115,10 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+     1. Global binding, when there is no specific object for the 'this' to see, so it looks at the global object of JS itself.
+    2. Implicit binding, implies that the 'this' keyword should be bound to the object in front of the dot. calling the function.
+    3. explicit binding, using a call or apply method to override a previous object
+    4. new binding uses the 'new' keyword to add on to existing objects
   */
   
   
